@@ -1,0 +1,129 @@
+<html>
+<head><title>  </title>
+<body background="hotel.jpg"  >
+	<center>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	</link>
+</head>
+<body>
+<h2>SEWA KAMAR HOTEL</h2>
+<div class="container">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+	function hitung2() {
+	var a = $(".a2").val();
+	var b = $(".b2").val();
+	var c = $(".c2").val();
+	var d = $(".d2").val();
+	var e = $(".e2").val();
+	var f = $(".f2").val();
+	g = (a * b)+(c * d)+(e * f); 
+	$(".g2").val(g);
+	}
+	function isNumberKey(evt){
+	 var charCode = (evt.which) ? evt.which : event.keyCode;
+	 if (charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57))
+	 return false;
+	 return true;
+	}
+  </script>
+  <form action="simpan_customer.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">ID Customer : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="idcustomer" pattern="^\d{3}$" title="diisi angka" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">NAMA KAMAR: </label>
+      </div>
+      <div class="col-75">
+		<br>
+        <input type="radio" id="lname" name="namakamar" value="VVIP | Rp. 300.000,00"/>VVIP | Rp. 300.000,00
+		<br>  
+		<br>
+		<input type="radio" id="lname" name="namakamar" value="VIP | Rp. 250.000,00"/>VIP | Rp. 250.000,00
+		<br>
+		<br>
+		<input type="radio" id="lname" name="namakamar" value="STR | Rp. 200.000,00"/>STR | Rp. 200.000,00
+		<br>
+		<br>
+		<input type="radio" id="lname" name="namakamar" value="DAHLIA| Rp. 175.000,00"/>DAHLIA | Rp. 175.000,00
+		<br>
+		<br>
+		<input type="radio" id="lname" name="namakamar" value="MAWAR| Rp. 150.000,00"/>MAWAR| Rp. 150.000,00
+		<br>
+		<br>
+		<input type="radio" id="lname" name="namakamar" value="MELATI| Rp. 100.000,00"/>MELATI| Rp. 100.000,00
+		<br>
+	</div>
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">JUMLAH ORANG: </label>
+      </div>
+      <div class="col-75">
+		<br>
+        <input type="radio" id="lname" name="jumlahorang" value="1"/>1
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="2"/>2
+        <br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="3"/>3
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="4"/>4
+        <br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="5"/>5
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="6"/>6
+        <br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="7"/>7
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="8"/>8
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="9"/>9
+		<br>
+		<br>
+		<input type="radio" id="lname" name="jumlahorang" value="10"/>10
+        <br>
+    </div>
+	</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Email : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="untuk contoh nando@gmail.com" required />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Alamat : </label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="alamat" style="height:150px" required></textarea>
+      </div>
+    </div>
+	<div class="inputa">
+      <div class="col-25">
+        <label for="fname">Total Harga : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="total" id="total" class="g2" readonly size="40">
+      </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</body>
+</html>

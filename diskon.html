@@ -1,0 +1,52 @@
+<html>
+<head><title>  </title>
+<body background="hotel.jpg"  >
+  <center>
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  </link>
+</head>
+<script><!--
+
+function startCalc(){
+interval = setInterval("calc()",1);}
+function calc(){
+one = document.autoSumForm.total_pokok.value;
+two = document.autoSumForm.pajak.value;
+three = document.autoSumForm.diskon.value;
+four = document.autoSumForm.denda.value;
+document.autoSumForm.jumlah.value = (one * 1) + (two * 1) - (three * 1) + (four * 1);}
+function stopCalc(){
+clearInterval(interval);}
+</script>
+
+</head>
+<body bgcolor="#E6E6FA">
+<form name='autoSumForm' >
+<table border='0' width='80%'  align='center' >
+<tr>
+<td><b>Total Bayar</b> </td>
+<td><input type='text' name='total_pokok' style="text-align:right;"  size='23'   onFocus="startCalc();" onBlur="stopCalc();" /></td>
+</tr>
+<tr>
+<td><b>Pajak</b> </td>
+<td><input type='text' name='pajak'  style="text-align:right;"  size='23'   onFocus="startCalc();" onBlur="stopCalc();" /></td>
+</tr>
+<tr>
+<td><b>Discount </b> </td>
+<td><input type='text' name="diskon"  style="text-align:right;"  size='23'  onFocus="startCalc();" onBlur="stopCalc();"  /></td>
+</tr>
+<tr>
+<td><b>Denda </b> </td>
+<td><input type='text' name="denda"  style="text-align:right;"  size='23'  onFocus="startCalc();" onBlur="stopCalc();"  /></td>
+</tr>
+<tr>
+<td>Jumlah</td>
+<td><input readonly type=text value='0' name="jumlah"  readonly> </td>
+</tr>
+<tr><td colspan='2'>
+</td></tr>
+</table>
+</form>
+
+</body>
+</html>

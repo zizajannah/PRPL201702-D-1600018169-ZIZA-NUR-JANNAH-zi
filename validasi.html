@@ -1,0 +1,156 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+ 
+ <script>
+    function validasi(){
+        var namaValid = /^[a-zA-Z]+(([\'\,\.\- ][a-zA-Z ])?[a-zA-Z]*)*$/;
+        var emailValid = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        var nimValid = /^[0-9]+$/;
+        var nama = formulir.nama.value;
+        var idcustomer = formulir.id_customer.value;
+        var jeniskelamin = formulir.jenis_kelamin.value;
+        var alamat = formulir.alamat.value;
+        var nohp = formulir.no_hp.value;
+        var chekin = formulir.chek_in.value;
+        var chekout = formulir.chek_out.value;;
+        var lamamenginap = formulir.lama_menginap.values;
+        var pesan = '';
+         
+        if(nama == ''){
+            pesan = '-Nama tidak boleh kosong\n';
+        }
+        if(nama != '' && !nama.match(namaValid)){
+            pesan += '-Nama tidak valid\n';
+        }
+        if(idcustomer == ''){
+          pesan = '-idcustomer Tidak Boleh Kosong\n';
+        }
+        if(idcustomer != '' && !idcustomer.match(nimValid)){
+          pesan += '-idcustomer Tidak Valid\n';
+        }
+        if(jeniskelamin == ''){
+            pesan += '-Jenis kelamin harus dipilih\n';
+        }
+        if(alamat == ''){
+          pesan = '-Alamat Tidak Boleh Kosong\n';
+        }
+        if(nohp == ''){
+        	pesan = '-nohp Tidak Boleh Kosong\n';
+        }
+        if(chekin == ''){
+            pesan += '-chekin tidak boleh kosong\n';
+        }
+        if(chekin !=''  && !chekin.match(emailValid)) {
+            pesan += '-Alamat email tidak valid\n';
+        }
+        if(pesan != '') {
+          alert('Maaf, Ada kesalahan pengisian Formulir\n'+pesan);
+          return false;
+        }
+    return true
+    }
+</script>
+<div class="header"><font face="Blackadder ITC" color="black" size="11"><b>Validasi Form</b></font>
+</div>
+<div class="main">
+<fieldset style="margin:auto; width:700px; height:">
+<legend><font size="7" color="black">Reservasi</font></legend>
+<form name="formulir" method="post" onSubmit="return validasi()">
+<table>
+	<tbody>
+		<tr>
+			<td><font size="5" color="black">Nama Lengkap</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="nama" placeholder="Masukkan Nama Lengkap Anda"/></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">ID Customer</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="id customer" placeholder="Masukkan idcustomer Anda"></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">Jenis Kelamin</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td>
+				<select name="jenis_kelamin">
+            		<option value="">-Pilih-</option>
+           			<option  value="laki-laki">Laki-Laki</option>
+            		<option value="perempuan">Perempuan</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">Alamat</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="alamat" placeholder="Masukkan Alamat"></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">No.HP</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="nohp" placeholder="Masukkan no.hp"></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">Chek In</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="chekin" placeholder="Masukkan tanggal,bulan,tahun chek out"></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">Chek Out</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td><input type="text" name="chekout" placeholder="Masukkan tanggal,bulan,tahun chek out"></td>
+		</tr>
+		<tr>
+			<td><font size="5" color="black">Lama Menginap</font></td>
+			<td><font size="5" color="black"> : </font></td>
+			<td>
+				<select name="Lama Menginap">
+            		<option value="">-Pilih-</option>
+           			<option  value="1">1 hari</option>
+            		<option value="2">2 hari</option>
+            		<option value="3">3 hari</option>
+            		<option value="4">4 hari</option>
+            		<option value="5">5 hari</option>
+            		<option value="6">6 hari</option>
+            		<option value="7">7 hari</option>
+            		<option value="8">8 hari</option>
+            		<option value="9">9 hari</option>
+            		<option value="10">10 hari</option>
+            		<option value="11">11 hari</option>
+            		<option value="12">12 hari</option>
+            		<option value="13">13 hari</option>
+            		<option value="14">14 hari</option>
+            		<option value="15">15 hari</option>
+            		<option value="16">16 hari</option>
+            		<option value="17">17 hari</option>
+            		<option value="18">18 hari</option>
+            		<option value="19">19 hari</option>
+            		<option value="20">20 hari</option>
+            		<option value="21">21 hari</option>
+            		<option value="22">22 hari</option>
+            		<option value="23">23 hari</option>
+            		<option value="24">24 hari</option>
+            		<option value="25">25 hari</option>
+            		<option value="26">26 hari</option>
+            		<option value="27">27 hari</option>
+            		<option value="28">28 hari</option>
+            		<option value="29">29 hari</option>
+            		<option value="30">30 hari</option>
+            		
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Simpan Data" name="submit" /></td>
+			<td><input type="reset" value="Reset Form" name="reset" /></td>
+		</tr>
+	</tbody>
+</table> 		
+</form>
+</fieldset>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<form name="form-kwt" method="get" action="cetak.php" target="_blank">
+
+<h1>Aplikasi Cetak Kwitansi Sederhana</h1>
+
+<div class="layout">
+
+Terima Dari : <input type="text" class="masukan nama" name="nm" value="Nama Pembayar" title="Nama Pembayar"/>
+
+Uang Sejumlah :<input type="text" class="masukan uang" name="jml" value="Jumlah Uang diterima" title="Jumlah Uang diterima"/>
+
+ Untuk Pembayaran : <input type="text" class="masukan pembayaran" name="utk" value="Untuk pembayaran" title="Untuk pembayaran"/>
+
+Nama Petugas : <input type="text" class="masukan petugas" name="ptg" value="Nama Petugas" title="Nama Petugas"/>
+
+<input type="submit" value="Cetak" class="tbl" style="align:left"/><input type="reset" value="Batal" class="tbl" style="align:right"/>
+
+</div></form>

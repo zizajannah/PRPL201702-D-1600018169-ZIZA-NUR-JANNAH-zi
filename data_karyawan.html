@@ -1,0 +1,70 @@
+ 	<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME TO MY HOTEL</title>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<center>
+<body>
+<div id="container">
+    <div id="header">
+    	<div class="header"></div>
+    	<div class="logo"><a href="index.html"><img src=""></a></div>
+    	<div class="menu">
+			<ul>
+				
+				<li><a href="reservasi.html"><font size="10" color="white"> Data Pegawai</font></a></li>
+				
+			</ul>
+		</div>
+    </div>
+    <div id="content">
+    	<div class="kontak">
+    		<form action="simpan_karyawan.php" method="post">
+		<table>
+			<tr>
+				<td>ID Karyawan</td>
+				<td> : </td>
+				<td><input type="text" name="idkaryawan"></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td> : </td>
+				<td><input type="text" name="namakaryawan"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td> : </td>
+				<td><input type="text" name="alamatkaryawan"></td>
+			</tr>
+			<tr>
+				<td>hpkaryawan</td>
+				<td> : </td>
+				<td><input type="text" name="hpkaryawan"></td>
+			</tr>
+			<tr>
+				<td>jkkaryawan</td>
+				<td> : </td>
+				<td>
+				<select name="jkkaryawan">
+            		<option value="">-Pilih-</option>
+           			<option  value="laki-laki">Laki-Laki</option>
+            		<option value="perempuan">Perempuan</option>
+				</select>
+			</td>
+			<tr>
+			<td><input type="submit" value="Simpan Data" name="submit" /></td>
+			<td><input type="reset" value="Reset Form" name="reset" /></td>
+		</tr>
+		</table>
+	</form>	
+    </div>
+	<div id="footer">
+		 
+		 
+    </div>
+</div>
+</div>
+</center>
+</body>
+</html>
